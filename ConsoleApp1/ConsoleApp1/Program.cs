@@ -9,7 +9,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Hello World!");
 
-            using (var db = new DataMainDbContextPostgres())
+            using (var db = new DataMainDbContextCockroach())
             {
                 db.Database.EnsureCreated();
 
