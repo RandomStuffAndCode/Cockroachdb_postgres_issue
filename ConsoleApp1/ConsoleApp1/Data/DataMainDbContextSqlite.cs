@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Data
 {
-    public class DataMainDbContext : DbContext
+    public class DataMainDbContextSqlite : DataMainDbContextBase
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite("Data Source=consoleapp.db");
-
-        public DbSet<Account> Accounts => Set<Account>();
 
     }
 }

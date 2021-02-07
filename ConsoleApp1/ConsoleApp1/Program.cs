@@ -9,7 +9,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Hello World!");
 
-            using (var db = new DataMainDbContext())
+            using (var db = new DataMainDbContextPostgres())
             {
                 db.Database.EnsureCreated();
 
@@ -24,7 +24,7 @@ namespace ConsoleApp1
                 db.Accounts.Add(account);
                 db.SaveChanges();
 
-                Console.WriteLine("SUCCESS");
+                Console.WriteLine($"SUCCESS. Id created: {account.Id}");
             }
         }
     }
