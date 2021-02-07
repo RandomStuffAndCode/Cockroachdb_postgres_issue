@@ -28,6 +28,6 @@ namespace ConsoleApp1.Data
 
         [Required]
         [ProtoMember(5)]
-        public string ConfiguratorIdentityName { get; set; } = null!;
+        public string MyIdentityName { get; set; } = null!;
     }
 }

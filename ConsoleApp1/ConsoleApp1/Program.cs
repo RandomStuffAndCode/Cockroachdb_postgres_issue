@@ -16,7 +16,7 @@ namespace ConsoleApp1
                 var now = DateTime.Now;
                 var account = new Account
                 {
-                    ConfiguratorIdentityName = "abc-123",
+                    MyIdentityName = "abc-123",
                     Created = now,
                     LastChanged = now,
                     Email = "my@email.com"
