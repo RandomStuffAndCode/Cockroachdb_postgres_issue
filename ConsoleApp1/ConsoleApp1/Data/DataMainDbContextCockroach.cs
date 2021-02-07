@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Data
 {
-    public class DataMainDbContextCockroach: DataMainDbContextBase
+    public class DataMainDbContextCockroach : DataMainDbContextBase
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
